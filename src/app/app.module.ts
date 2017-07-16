@@ -5,15 +5,16 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { HeaderComponent } from './header/header.component';
-import { LeftMenuComponent } from './left-menu/left-menu.component';
+
+import { HeadersComponent } from './layouts/headers/headers.component';
+import { MenuLeftsComponent } from './layouts/menu-lefts/menu-lefts.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    HeaderComponent,
-    LeftMenuComponent
+    HeadersComponent,
+    MenuLeftsComponent
   ],
   imports: [
     BrowserModule,
