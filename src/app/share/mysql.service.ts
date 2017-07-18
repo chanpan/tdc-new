@@ -2,7 +2,7 @@ import { observable } from 'rxjs/symbol/observable';
 import { Injectable } from '@angular/core';
 
 //Lib
-import * as mysql from 'mysql';
+const mysql = require('mysql');
 //Rxjs
 import { Observable } from 'rxjs/Observable';
 
@@ -23,10 +23,8 @@ export class MysqlService {
           observer.next(connection);
           observer.complete();
         }
-
       });
     });
-
   }//ทำหน้าที่เชื่อมต่อฐานข้อมูล
   ShowDataBaseName(): Observable<any> {
     return Observable.create(observer => {
