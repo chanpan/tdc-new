@@ -3,6 +3,8 @@ import { Injectable } from '@angular/core';
 
 //Lib
 const mysql = require('mysql');
+const smartcard = require('smartcard');
+
 //Rxjs
 import { Observable } from 'rxjs/Observable';
 
@@ -13,8 +15,8 @@ export class MysqlService {
   DatabaseConnection(): Observable<any> {
     return Observable.create(observer => {
       this.conn = mysql.createConnection({
-        host: '127.0.0.1',
-        user: 'root',
+        host: '127.0.0.1d',
+        user: 'roots',
         password: '',
         database: 'guide'
       });

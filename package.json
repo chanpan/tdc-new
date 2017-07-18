@@ -40,6 +40,7 @@
     "jquery": "^3.2.1",
     "mysql": "^2.13.0",
     "rxjs": "^5.4.2",
+    "smartcard": "^1.0.20",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
@@ -58,6 +59,7 @@
     "devtron": "^1.4.0",
     "electron": "^1.6.2",
     "electron-packager": "^8.6.0",
+    "electron-prebuilt": "^1.4.13",
     "exports-loader": "^0.6.3",
     "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^0.10.0",
