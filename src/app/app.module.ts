@@ -10,6 +10,9 @@ import { HeadersComponent } from './layouts/headers/headers.component';
 import { MenuLeftsComponent } from './layouts/menu-lefts/menu-lefts.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 
+//Service
+import { MysqlService } from './share/mysql.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +26,7 @@ import { NotfoundComponent } from './notfound/notfound.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [MysqlService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
